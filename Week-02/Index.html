@@ -8,7 +8,8 @@
             <img src="img/LOGO-RR 2 1.png" alt="Radium Rocket Logo">
             <h1>Mega Rocket S.A.</h1>
         </header>
-        <nav>
+        <aside>
+         <nav>
             <img src="img/LOGO-RR 1.jpg" alt="Radium iso">
             <ul>
                 <li><a href="home">Home</a></li>
@@ -24,10 +25,11 @@
             </ul>
             <ul>
                 <li><a href="mailto:Info@Rocket.com"><img src="img/Message-icon.png" alt="Envelope icon">info@Rocket.com</a></li>
-                <li><img src="img/Home-icon.png" alt="Home icon">Rosario, Argentina</li>
-                <li><img src="img/Whatsapp-icon.png" alt="WhatsApp icon">(000)000-000</li>
+                <li><a href="https://www.google.com/maps/?hl=es" target="_blank"><img src="img/Home-icon.png" alt="Home icon">Rosario, Argentina</a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><img src="img/Whatsapp-icon.png" alt="WhatsApp icon">(000)000-000</a></li>
             </ul>
-        </nav>
+         </nav>
+        </aside>
         <main>
             <h2>The main reason of health</h2>
             <p>
@@ -42,10 +44,10 @@
             <section id="Help">
                 <h2>How can we help you?</h2>
                 <ul>
-                    <li><a href="Turns">Turn Reservation</a></li>
-                    <li><a href="Memberships">Membership Management</a></li>
-                    <li><a href="Schedule">Schedule Display</a></li>
-                    <li><a href="Contact">Contact and Suggestions form</a></li>
+                    <li>Turn Reservation</li>
+                    <li>Membership Management</li>
+                    <li>Agent Display</li>
+                    <li>Contact and Suggestions form</li>
                 </ul>
                 <img src="img/image 5.png" alt="Blurred image of man lifting weights">
             </section>
@@ -58,18 +60,18 @@
                     <label>Surname</label>
                     <input type="text" name="surName">
                     <label>Email</label>
-                    <input type="email" naem="email">
+                    <input type="email" name="email">
                     <h3>Reason for contact</h3>
                     <label>I want to make a query or suggestion</label>
-                    <input type="radio">
+                    <input type="radio" name="Reason for contact" value="query">
                     <label>I want to make a claim</label>
-                    <input type="radio">
+                    <input type="radio" name="Reason for contact" value="query">
                     <label>I want to know the memberships and costs</label>
-                    <input type="radio">
+                    <input type="radio" name="Reason for contact" value="query">
                     <label>Message</label>
                     <textarea name="message"></textarea>
                     <input type="submit" name="sendMessage" value="Send Message">
-                    <input type="submit" name="reset" value="Reset">
+                    <button type="reset">Reset</button>
                 </section>
             </form>
             <section id="History">  
