@@ -27,7 +27,6 @@ h1{
     line-height: 47px;
     color: #AACE9B;
     text-transform: uppercase;
-
 }
 
 .logo-1 {
@@ -52,6 +51,10 @@ aside {
     background-color: #AACE9B;
     float: left;
     text-align: center;
+}
+
+aside h2{
+    font-size: 25px;
 }
 
 .logo-2{
@@ -106,7 +109,6 @@ aside {
     left: 38px;
 }
 
-
 .img-2{
     display: inline;
     padding-top: 20px;
@@ -153,7 +155,46 @@ aside {
 
 #help h2{
     position: absolute;
+    top: 125px;
+    left: 385px;
+    color: #fff;
+}
 
+#help li{
+    display: inline-block;
+    width: 257px;
+    height: 50px;
+    padding: 25px 36px 0px;
+    background-color: #EBECF0;
+    color: #373867;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#help li:nth-child(1){
+    position: absolute;
+    top: 267px;
+    left: 200px;
+}
+
+#help li:nth-child(2){
+    position: absolute;
+    top: 267px;
+    left: 605px;
+}
+
+#help li:nth-child(3){
+    position: absolute;
+    top: 556px;
+    left: 200px;
+}
+
+#help li:nth-child(4){
+    position: absolute;
+    top: 556px;
+    left: 605px;
 }
 
 #help img{
@@ -163,10 +204,18 @@ aside {
     z-index: -1;
     width: 1022px;
     height: 776px;
-    
 }
 
 .footer{
+    position: relative;
     width: 80%;
     float: right;
+    background-color: #373867;
+}
+
+.footer small{
+    position: absolute;
+    top: 38px;
+    bottom: 40px;
+    left: 58px;
 }
