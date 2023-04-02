@@ -1,3 +1,7 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 header {
     position: relative;
     float: right;
@@ -8,10 +12,22 @@ header {
 
 a{
     color: #373867;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-size: 20px;
     text-decoration: none;
+}
+
+h1{
+    position: absolute;
+    top: 35px;
+    bottom: 55px;
+    left: 310px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #AACE9B;
+    text-transform: uppercase;
+
 }
 
 .logo-1 {
@@ -21,26 +37,21 @@ a{
     left: 50px;
 }
 
-h1{
-    position: absolute;
-    top: 35px;
-    bottom: 55px;
-    left: 310px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h2{
+    font-size: 30px;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 47px;
-    color: #AACE9B;
     text-transform: uppercase;
-
+    color: #373867;
 }
 
+
 aside {
+    position: fixed;
     width: 20%;
     height: 100%;
     background-color: #AACE9B;
     float: left;
-    position: fixed;
+    text-align: center;
 }
 
 .logo-2{
@@ -52,7 +63,7 @@ aside {
 .my-nav{
     position: absolute;
     top: 180px;
-    left: 40px;
+
 }
 
 .button-1{
@@ -60,10 +71,102 @@ aside {
     padding: 14px 36px;
     width: 100px;
     height: 30px;
-    margin: 20px 15px;
+    margin: 10px 15px;
     background-color: #EBECF0;
     color: #373867;
     text-align: center;
     text-decoration: none;
+}
 
+.button-1 a{
+    text-transform: uppercase;
+}
+
+.button-selection{
+    display: inline-block;
+    padding: 14px 36px;
+    width: 100px;
+    height: 30px;
+    margin: 10px 15px;
+    background-color: #373867;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-selection a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.other-options {
+    position: absolute;
+    top: 500px;
+    text-align: left;
+    left: 38px;
+}
+
+
+.img-2{
+    display: inline;
+    padding-top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.main-content{
+    width: 80%;
+    float: right;
+    position: relative;
+}
+
+.reason-health h2{
+    position: absolute;
+    top: 68px;
+    left: 68px;
+}
+
+.reason-health p{
+    position: absolute;
+    top: 120px;
+    left: 74px;
+    display: inline-block;
+    width: 40%;
+    color: #373867;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reason-health img{
+    display: block;
+    margin-left: 434px;
+    width: 60%;
+    
+}
+
+#help{
+    position: relative;
+    width: 1122px;
+    height: 876px;
+    margin-top: 112px;
+}
+
+#help h2{
+    position: absolute;
+
+}
+
+#help img{
+    position: absolute;
+    left: 74px;
+    top: 0px;
+    z-index: -1;
+    width: 1022px;
+    height: 776px;
+    
+}
+
+.footer{
+    width: 80%;
+    float: right;
 }
