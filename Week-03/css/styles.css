@@ -2,7 +2,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header {
+header, footer {
     position: relative;
     float: right;
     width: 80%;
@@ -384,7 +384,27 @@ aside h2{
 
 .activity li:nth-child(1) p{
     position: absolute;
-    top: 77px;
+    top: 75px;
+}
+
+.activity li:nth-child(2) p{
+    position: absolute;
+    top: 200px;
+}
+
+.activity li:nth-child(3) p{
+    position: absolute;
+    top: 325px;
+}
+
+.activity li:nth-child(4) p{
+    position: absolute;
+    top: 460px;
+}
+
+.activity li:nth-child(5) p{
+    position: absolute;
+    top: 600px;
 }
 
 .activity li img{
@@ -396,13 +416,14 @@ aside h2{
     position: absolute;
     display: inline-block;
     top: 100px;
-    left: 500px;
+    left: 600px;
     width: 40%;
 }
 
-.membership ul{
-    position: inherit;
-    left: 120px;
+.membership ul, h3{
+    position: relative;
+    left: 70px;
+    padding: 10px;
 }
 
 .membership img{
@@ -411,18 +432,27 @@ aside h2{
     left: 10px;
 }
 
-.footer{
-    position: relative;
-    width: 80%;
-    top: 70px;
-    float: right;
-    background-color: #373867;
-}
-
-
-.footer small{
+footer small{
     position: absolute;
     top: 38px;
     bottom: 40px;
     left: 58px;
+}
+
+footer img{
+    position: absolute;
+    top: 31px;
+    margin-left: 20px ;
+}
+
+.google{
+    left: 820px;
+}
+
+.insta{
+    left: 920px;
+}
+
+.face{
+    left: 1000px;
 }
