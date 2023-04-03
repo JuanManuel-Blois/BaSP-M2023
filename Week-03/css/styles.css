@@ -17,6 +17,10 @@ a{
     text-decoration: none;
 }
 
+input[type=radio] {
+    accent-color: #373867;
+}
+
 h1{
     position: absolute;
     top: 35px;
@@ -118,6 +122,7 @@ aside h2{
 
 .main-content{
     width: 80%;
+
     float: right;
     position: relative;
 }
@@ -164,7 +169,7 @@ aside h2{
     display: inline-block;
     width: 257px;
     height: 50px;
-    padding: 25px 36px 0px;
+    padding: 25px 36px;
     background-color: #EBECF0;
     color: #373867;
     font-size: 25px;
@@ -197,6 +202,10 @@ aside h2{
     left: 605px;
 }
 
+#help li:nth-child(1) p, #help li:nth-child(3) p{
+    margin: 13px 0px;
+}
+
 #help img{
     position: absolute;
     left: 74px;
@@ -206,12 +215,210 @@ aside h2{
     height: 776px;
 }
 
+#contact{
+    position: relative;
+    margin-left: 74px;
+    margin-bottom: 200px;
+}
+
+#contact h2{
+    padding-bottom: 23px;
+}
+
+#contact img{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    width: 30px;
+    height: 30px;
+}
+
+.form-item{
+    display: block;
+    padding: 17px 0px;
+    color: #373867;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-item input{
+    margin-left: 50px;
+}
+
+#contact h3{
+    padding-top: 15px;
+    padding-bottom: 32px;
+    color: #373867;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.reason-contact{
+    display: block;
+    padding-top: 10px;
+    color: #373867;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-item input{
+    width: 293px;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.form-item:nth-child(1) input, .form-item:nth-child(3) input {
+   margin-left: 78px;
+}
+
+.form-item :placeholder-shown{
+    padding: 0px 15px;
+}
+
+.message{
+    display: block;
+    padding-top: 78px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #373867;
+}
+
+.message textarea{
+    display: block;
+    width: 917px;
+    height: 200px;
+    margin-top: 6px;
+    padding-top: 10px;
+}
+
+.message input[type="submit"]{
+    position: relative;
+    top: 10px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #373867;
+    background-color: #AACE9B;
+    box-shadow: none;
+
+}
+
+.message button[type="reset"]{
+    position: relative;
+    top: 10px;
+    left: 25px;
+    padding: 14px 26px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #373867;
+}
+
+#history{
+    position: relative;
+    width: 80%;
+}
+
+#history h2{
+    position: relative;
+    left: 47px;
+    bottom: 25px;
+}
+
+#history p{
+    position: absolute;
+    width: 817px;
+    height: 322px;
+    top: 268px;
+    left: 151px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: justify;
+}
+
+#history img{
+    position: inherit;
+    width: 1022px;
+    height: 776pxpx;
+    left: 47px;
+    right: 0px;
+    z-index: -1;
+}
+
+#activities {
+    position: relative;
+    width: 80%;
+    height: 800px;
+}
+
+#activities h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.activity{
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    left: 100px;
+    width: 40%;
+    padding-bottom: 66px;
+}
+
+.activity ul{
+    top: 25px;
+}
+
+.activity li{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.activity li p{
+    position: absolute;
+    left: 200px;
+}
+
+.activity li:nth-child(1) p{
+    position: absolute;
+    top: 77px;
+}
+
+.activity li img{
+    margin-right: 40px;
+    padding: 10px 0px;
+}
+
+.membership{
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    left: 500px;
+    width: 40%;
+}
+
+.membership ul{
+    position: inherit;
+    left: 120px;
+}
+
+.membership img{
+    position: relative;
+    top: 70px;
+    left: 10px;
+}
+
 .footer{
     position: relative;
     width: 80%;
+    top: 70px;
     float: right;
     background-color: #373867;
 }
+
 
 .footer small{
     position: absolute;

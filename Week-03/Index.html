@@ -20,15 +20,15 @@
                 <li class="button-selection"><a href="#header">Home</a></li>
                 <li class="button-1"><a href="Sign up">Sign Up</a></li>
                 <li class="button-1"><a href="Log in">Log in</a></li>
-                <li class="button-1"><a href="#Contact">Contact</a></li>
+                <li class="button-1"><a href="#contact">Contact</a></li>
             </ul>
          </nav>
          <section class="other-options">
          <h2>Other Options</h2>
             <ul>
                 <li><a href="#help">How can we help you</a></li>
-                <li><a href="#History">Our History</a></li>
-                <li><a href="#Activities">Activities</a></li>
+                <li><a href="#history">Our History</a></li>
+                <li><a href="#activities">Activities</a></li>
             </ul>
             <ul>
                 <li><a href="mailto:Info@Rocket.com"><img class="img-2" src="img/message-icon.png" alt="Envelope icon">info@Rocket.com</a></li>
@@ -53,37 +53,50 @@
             <section id="help">
                 <h2>How can we help you?</h2>
                 <ul>
-                    <li>Turn Reservation</li>
-                    <li>Membership Management</li>
-                    <li>Agent Display</li>
-                    <li>Contact and Suggestions form</li>
+                    <li><p>Turn Reservation</p></li>
+                    <li><p>Membership Management</p></li>
+                    <li><p>Agent Display</p></li>
+                    <li><p>Contact and Suggestions form</p></li>
                 </ul>
                 <img src="img/image-5.png" alt="Blurred image of man lifting weights">
             </section>
-            <section id="Contact">
+            <section id="contact">
                 <h2>Contact</h2>
                 <img src="img/message-icon-2.png" alt="Envelope icon">
                 <form>
-                    <label for="name">Name</label>
-                    <input id="name" type="text" name="firstlName">
-                    <label for="surname">Surname</label>
-                    <input id="surname" type="text" name="surName">
-                    <label for="e-mail">Email</label>
-                    <input id="e-mail" type="email" name="email">
+                    <label class="form-item" for="name">
+                        Name
+                        <input id="name" type="text" name="firstlName" placeholder="Insert your name"></label>
+                    <label class="form-item" for="surname">
+                        Surname
+                        <input id="surname" type="text" name="surName" placeholder="Insert your surname">
+                    </label>
+                    <label class="form-item" for="e-mail">
+                        Email
+                        <input id="e-mail" type="email" name="email" placeholder="Insert your e-mail">
+                    </label>
                     <h3>Reason for contact</h3>
-                    <label for="suggestion" >I want to make a query or suggestion</label>
-                    <input id="suggestion" type="radio" name="Reason for contact" value="query">
-                    <label for="claim">I want to make a claim</label>
-                    <input id="claim" type="radio" name="Reason for contact" value="query">
-                    <label for="costs">I want to know the memberships and costs</label>
-                    <input id="costs" type="radio" name="Reason for contact" value="query">
-                    <label>Message</label>
-                    <textarea name="message"></textarea>
-                    <input type="submit" name="sendMessage" value="Send Message">
-                    <button type="reset">Reset</button>
+                        <label class="reason-contact" for="suggestion">
+                            <input id="suggestion" type="radio" name="Reason for contact" value="query">
+                            I want to make a query or suggestion
+                        </label>
+                        <label class="reason-contact" for="claim">
+                            <input id="claim" type="radio" name="Reason for contact" value="query">
+                            I want to make a claim
+                        </label>
+                        <label class= "reason-contact" for="costs">
+                            <input id="costs" type="radio" name="Reason for contact" value="query">
+                            I want to know the memberships and costs
+                        </label>
+                        <label class="message">
+                            Message
+                            <textarea name="message"></textarea>
+                            <input type="submit" name="sendMessage" value="Send Message">
+                            <button type="reset">Reset</button>
+                        </label>
                 </form>
             </section>
-            <section id="History">  
+            <section id="history">  
                 <h2>Our History</h2>
                 <p>
                     Quisque pellentesque lacus metus, sodales tempor leo tincidunt ut. Curabitur quis elit ut lectus
@@ -94,38 +107,42 @@
                 </p>
                 <img src="img/image-6.png" alt="woman training">
             </section>  
-            <section id="Activities">
-                <h2>Activities</h2>
-                <ul>
-                    <li><img src="img/crossfit.png" alt="crossfit icon">Crossfit</li>
-                    <li><img src="img/fitness.png" alt="fitness icon">Fitness</li>
-                    <li><img src="img/spinning.png" alt="spinning icon">Spinning</li>
-                    <li><img src="img/functional.png" alt="functional icon">Functional</li>
-                    <li><img src="img/box.png" alt="boxing icon">Box</li>
-                </ul>
-                <h2>Membership Styles</h2>
-                <h3>Black membership</h3>
-                <img src="img/black-membership.png" alt="black membership icon">
-                <img src="img/classic.png" alt="classic membership icon">
-                <img src="img/only.png" alt="only classes icon">
-                <ul>
-                    <li>Free access to the weight room</li>
-                    <li>Free acces to classes prior</li>
-                    <li>Registration</li>
-                    <li>Personalized monitoring by coach</li>
-                    <li>Grid display</li>
+            <section id="activities">
+                <div class="activity">
+                    <h2>Activities</h2>
+                    <ul>
+                        <li><img src="img/crossfit.png" alt="crossfit icon"><p>Crossfit</p></li>
+                        <li><img src="img/fitness.png" alt="fitness icon"><p>Fitness</p></li>
+                        <li><img src="img/spinning.png" alt="spinning icon"><p>Spinning</p></li>
+                        <li><img src="img/functional.png" alt="functional icon"><p>Functional</p></li>
+                        <li><img src="img/box.png" alt="boxing icon"><p>Box</p></li>
                     </ul>
-                <h3>Classic Membership</h3>
-                <ul>
-                    <li>Registration</li>
-                    <li>Personalized monitoring by coach</li>
-                    <li>Grid display</li>       
-                </ul>
-                <h3>Only classes membership</h3>
-                <ul>
-                    <li>Free access to the weight room</li>
-                    <li>Grid display</li>
-                </ul>
+                </div>
+                <div class="membership">
+                    <h2>Membership Types</h2>
+                    <img src="img/black-membership.png" alt="black membership icon">
+                    <h3>Black membership</h3>
+                    <ul>
+                        <li>Free access to the weight room</li>
+                        <li>Free acces to classes prior</li>
+                        <li>Registration</li>
+                        <li>Personalized monitoring by coach</li>
+                        <li>Grid display</li>
+                    </ul>
+                    <img src="img/classic.png" alt="classic membership icon">    
+                    <h3>Classic Membership</h3>
+                    <ul>
+                        <li>Registration</li>
+                        <li>Personalized monitoring by coach</li>
+                        <li>Grid display</li>       
+                    </ul>
+                    <img src="img/only.png" alt="only classes icon">
+                    <h3>Only classes membership</h3>
+                    <ul>
+                        <li>Free access to the weight room</li>
+                        <li>Grid display</li>
+                    </ul>
+                </div>
             </section>
         </main>
         <footer class="footer">
