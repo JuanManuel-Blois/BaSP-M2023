@@ -53,7 +53,6 @@ aside {
     width: 20%;
     height: 100%;
     background-color: #AACE9B;
-    float: left;
     text-align: center;
 }
 
@@ -113,6 +112,12 @@ aside h2{
     left: 38px;
 }
 
+.other-options li img{
+   display: inline-block;
+   position: relative;
+   top: 5px;
+}
+
 .img-2{
     display: inline;
     padding-top: 20px;
@@ -120,11 +125,18 @@ aside h2{
     width: 30px;
 }
 
-.main-content{
+main{
     width: 80%;
-
-    float: right;
     position: relative;
+    float: right;
+}
+
+.div-line{
+    position: absolute;
+    height: 4px;
+    width: 80%;
+    left: 150px;
+    background-color: black;
 }
 
 .reason-health h2{
@@ -148,13 +160,13 @@ aside h2{
     display: block;
     margin-left: 434px;
     width: 60%;
-    
+    padding-bottom: 50px;
 }
 
 #help{
     position: relative;
     width: 1122px;
-    height: 876px;
+    height: 820px;
     margin-top: 112px;
 }
 
@@ -218,7 +230,8 @@ aside h2{
 #contact{
     position: relative;
     margin-left: 74px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
+    padding: 50px 0px;
 }
 
 #contact h2{
@@ -227,7 +240,7 @@ aside h2{
 
 #contact img{
     position: absolute;
-    top: 0px;
+    top: 50px;
     left: 150px;
     width: 30px;
     height: 30px;
@@ -243,6 +256,9 @@ aside h2{
 
 .form-item input{
     margin-left: 50px;
+    width: 293px;
+    height: 45px;
+    border-radius: 20px;
 }
 
 #contact h3{
@@ -261,14 +277,8 @@ aside h2{
     font-weight: 700;
 }
 
-.form-item input{
-    width: 293px;
-    height: 45px;
-    border-radius: 20px;
-}
-
 .form-item:nth-child(1) input, .form-item:nth-child(3) input {
-   margin-left: 78px;
+   margin-left: 80px;
 }
 
 .form-item :placeholder-shown{
@@ -317,6 +327,7 @@ aside h2{
 #history{
     position: relative;
     width: 80%;
+    padding: 100px 0px;
 }
 
 #history h2{
@@ -420,7 +431,7 @@ aside h2{
     width: 40%;
 }
 
-.membership ul, h3{
+.membership ul, .membership h3{
     position: relative;
     left: 70px;
     padding: 10px;
