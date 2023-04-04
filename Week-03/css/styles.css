@@ -108,14 +108,20 @@ aside h2{
 .other-options {
     position: absolute;
     top: 500px;
+    padding-top: 5px;
+    font-weight: 600;
     text-align: left;
     left: 38px;
 }
 
+.other-options ul, .other-options li{
+    padding-top: 5px;
+}
+
 .other-options li img{
-   display: inline-block;
-   position: relative;
-   top: 5px;
+    position: relative;
+    display: inline-block;
+    top: 5px;
 }
 
 .img-2{
