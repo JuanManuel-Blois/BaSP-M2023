@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #373867;
+    color: #AACE9B;
+    width: 100vw;
+    min-height: 58px;
+}
+
+.header h1{
+    margin: auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo-1{
+    display: none;
+}
+
+.burger{
+    max-height: 47px;
+}
+

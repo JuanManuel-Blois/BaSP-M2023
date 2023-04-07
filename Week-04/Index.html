@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css"> 
+        <link rel="stylesheet" type="text/css" href="css/aside.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
     </head>
     <body>
-        <header id="header">
-            <img class="logo-1" src="img/logo-rr-2-1.png" alt="Radium Rocket Logo">
-            <h1>Mega Rocket S.A.</h1>
-        </header>
         <aside>
             <img class="logo-2" src="img/logo-rr-1.png" alt="Radium iso">    
             <nav class="my-nav">
@@ -37,9 +37,16 @@
             </ul>
          </section>
         </aside>
+        <div class="main-container">
+        <header class="header">
+            <img class="logo-1" src="img/logo-rr-2-1.png" alt="Radium Rocket Logo">
+            <img class="burger" src="img/burger.png" alt="burger menu">
+            <h1>Mega Rocket S.A.</h1>
+        </header>
         <main>
             <section class="reason-health">
             <h2>The main reason of health</h2>
+            <div class="health-content">
             <p>
                 Component Body Maecenas interdum faucibus quam ac interdum. Donec facilisis vitae ipsum a ullamcorper. 
                 Proin interdum suscipit velit. Nullam pulvinar efficitur sapien ac rhoncus. Aenean scelerisque, nisi at
@@ -49,34 +56,38 @@
                 porta eleifend.
             </p>
             <img src="img/image-4.png" alt="Man and woman lifting weights">
+            </div>
             </section>
             <div class="div-line"></div>
             <section id="help">
-                <h2>How can we help you?</h2>
-                <ul>
-                    <li><p>Turn Reservation</p></li>
-                    <li><p>Membership Management</p></li>
-                    <li><p>Agent Display</p></li>
-                    <li><p>Contact and Suggestions form</p></li>
+                <h2 class="help-title">How can we help you?</h2>
+                <ul class="help-ul">
+                    <li><p class="help-text">Turn Reservation</p></li>
+                    <li><p class="help-text">Membership Management</p></li>
+                    <li><p class="help-text">Agent Display</p></li>
+                    <li><p class="help-text">Contact and Suggestions form</p></li>
                 </ul>
                 <img src="img/image-5.png" alt="Blurred image of man lifting weights">
             </section>
             <div class="div-line"></div>
-            <section id="contact">
+            <section id="contact" class="contact">
+                <div class="contact-title">
                 <h2>Contact</h2>
                 <img src="img/message-icon-2.png" alt="Envelope icon">
+                </div>
                 <form>
                     <label class="form-item" for="name">
                         Name
-                        <input id="name" type="text" name="firstlName" placeholder="Insert your name"></label>
+                        <input class="general-input" id="name" type="text" name="firstlName" placeholder="Insert your name"></label>
                     <label class="form-item" for="surname">
                         Surname
-                        <input id="surname" type="text" name="surName" placeholder="Insert your surname">
+                        <input class="general-input" id="surname" type="text" name="surName" placeholder="Insert your surname">
                     </label>
                     <label class="form-item" for="e-mail">
                         Email
-                        <input id="e-mail" type="email" name="email" placeholder="Insert your e-mail">
+                        <input class="general-input" id="e-mail" type="email" name="email" placeholder="Insert your e-mail">
                     </label>
+                    <div class="contact-general">
                     <h3>Reason for contact</h3>
                         <label class="reason-contact" for="suggestion">
                             <input id="suggestion" type="radio" name="Reason for contact" value="query">
@@ -96,6 +107,7 @@
                             <input type="submit" name="sendMessage" value="Send Message" placeholder="Type your message here">
                             <button type="reset">Reset</button>
                         </label>
+                    </div>
                 </form>
             </section>
             <div class="div-line"></div>
@@ -157,5 +169,6 @@
             </a>
             </a>
         </footer>
+        </div>
     </body>
 </html>
