@@ -42,18 +42,20 @@ main{
     background-image: url('..//img/image-5.png');
     background-position: center;
     background-size: cover;
-    height: 684px;
+    height: 80vh;
     width: 100vw;
 }
 
 .help-title{
     color: white;
-    width: 100%;
     text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 50px;
 }
 
+
 .help-ul{
-    height: 50%;
+    height: 25rem;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -115,7 +117,7 @@ main{
 
 .form-item input{
     width: 50%;
-    min-height: 27px;
+    height: 1.7rem;
     border-radius: 20px;
 }
 
@@ -129,11 +131,26 @@ main{
 #history{
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    width: 100vw;
+    justify-content: center;
     align-items: center;
+    margin-top: 50px;
+}
+
+#history img{
+    display: none;
 }
 
 .history-text{
-    width: 100vh;
-    text-align: center;
+    margin: 50px 0px;
+    padding: 9rem 2rem;
+    height: 20vh;
+    text-align: justify;
+    text-shadow: 4px 4px 4px; 
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-image: url('../img/image-6.png');
+    background-position: center;
+    background-size: cover;
 }
