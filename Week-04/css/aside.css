@@ -1,12 +1,11 @@
 aside{
-    position: sticky;
+    position: fixed;
     top: 0;
-    /*display: none;*/
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     background-color: #fff;
 }
 
@@ -88,4 +87,35 @@ aside{
 .options-2 li a > img{
     width: 1.5rem;
     padding-right: 0.5rem;
+}
+
+.options-2 li:nth-child(3) a > img{
+    width: 2rem;
+    padding-right: 0.5rem;
+}
+
+
+.socials{
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    order: 2;
+    margin: 3rem 2rem 0 0;
+}
+
+.socials .insta{
+    width: 2rem;
+    padding: 0.25rem;
+}
+
+.socials .face{
+    width: 2rem;
+    padding: 0.25rem;
+}
+
+.socials .google{
+    width: 2rem;
+    padding: 0.25rem;
 }
