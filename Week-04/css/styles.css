@@ -9,6 +9,11 @@ body{
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+    color: #373867;
+}
+
 h2{
     font-size: 30px;
     font-weight: 700;

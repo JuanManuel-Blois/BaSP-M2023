@@ -124,7 +124,6 @@ main {
     margin-left: 2.75rem;
 }
 
-
 .contact-general {
     display: flex;
     flex-direction: column;
@@ -199,7 +198,7 @@ main {
 }
 
 .history-text {
-    margin: 50px 0px;
+    margin: 3.125rem 0px;
     padding: 9rem 2rem;
     text-align: justify;
     text-shadow: 4px 4px 4px; 

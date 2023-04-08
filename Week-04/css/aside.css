@@ -1,6 +1,91 @@
 aside{
-    display: none;
-    width: 100%;
-    height: 100%;
+    position: sticky;
+    top: 0;
+    /*display: none;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-color: #fff;
+}
+
+.burger{
+    align-self: flex-start;
+}
+
+.logo-2{
+    margin-top: 2rem;
+    order: 1;
+    border: #AACE9B 1px solid;
+}
+
+.my-nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35vh;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.my-nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.5rem;
+    height: 4.3rem;
+    border: 1px #AACE9B solid;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.my-nav ul li:nth-child(4){
+    display: none;
+}
+
+.button-1{
+    background-color: #EBECF0;
+}
+
+.button-selection{
+    background-color: #373867;
+}
+
+.button-selection a{
+    color: #fff;
+}
+
+.other-options h2{
+    display: none;
+}
+
+.options-1{
+    display: none;
+}
+
+.options-2{
+    margin-top: 3rem;
+}
+
+.options-2 a{
+    font-size: 0.825rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.options-2 li {
+    display: flex;
+    justify-content: start;
+    padding: 0 0 0 60vw;
+    width: 100vw;
+}
+
+.options-2 li a > img{
+    width: 1.5rem;
+    padding-right: 0.5rem;
 }
