@@ -107,10 +107,8 @@ main{
 
 .form-item{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-    padding-top: 10%;
+    font-size: 0.875rem;
     padding: 10% 10% 0% 10%;
     font-weight: 700;
 }
@@ -118,14 +116,74 @@ main{
 .form-item input{
     width: 50%;
     height: 1.7rem;
+    margin-left: 4rem;
+    border: #000 solid 1px;
     border-radius: 20px;
 }
+
+#surname{
+    margin-left: 2.75rem;
+}
+
 
 .contact-general{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 100vw;
     padding-top: 10%;
+
+}
+.contact-general h3{
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0 0 0 2.2rem;
+}
+
+.reason-contact{
+    padding: 1.6rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.reason-contact p{
+    text-align: left;    
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    margin: 0 1.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.message textarea{
+    width: 80vw;
+    margin: 1.75rem 0;
+}
+.message-inputs{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.message input[type="submit"]{
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #373867;
+    background-color: #AACE9B;
+    border-radius: 5px;
+}
+
+.message button[type="reset"]{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #373867;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 #history{
@@ -144,7 +202,6 @@ main{
 .history-text{
     margin: 50px 0px;
     padding: 9rem 2rem;
-    height: 20vh;
     text-align: justify;
     text-shadow: 4px 4px 4px; 
     font-size: 20px;
@@ -153,4 +210,54 @@ main{
     background-image: url('../img/image-6.png');
     background-position: center;
     background-size: cover;
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.activity li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    margin: 1.4rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.activity li > img{
+    width: 3rem;
+}
+
+.membership{
+    display: flex;
+    flex-direction: column;
+}
+
+.black{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.black h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10%;
+}
+
+.black img{
+    width: 2.125rem;
+}
+
+.black ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 10%;
+    list-style-type: "-";
 }

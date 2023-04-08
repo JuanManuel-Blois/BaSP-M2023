@@ -1,0 +1,20 @@
+footer{
+    background-color: #373867;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.9375rem;
+    height: 4rem;
+    font-size: 12px;
+}
+
+footer img{
+    width: 1rem;
+    height: 1rem;
+    padding: 4px;
+}
+
+.google {
+    width: 1.25rem;
+    height: 0.8125rem;
+}

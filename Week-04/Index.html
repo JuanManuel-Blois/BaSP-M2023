@@ -102,10 +102,14 @@
                             I want to know the memberships and costs
                         </label>
                         <label class="message">
-                            Message
-                            <textarea name="message" cols="150" rows="10" placeholder="Type your message here" required></textarea>
-                            <input type="submit" name="sendMessage" value="Send Message" placeholder="Type your message here">
-                            <button type="reset">Reset</button>
+                            <div class="message-text">
+                                Message
+                                <textarea name="message" cols="150" rows="10" placeholder="Type your message here" required></textarea>
+                            </div>
+                            <div class="message-inputs">
+                                <input type="submit" name="sendMessage" value="Send Message" placeholder="Type your message here">
+                                <button type="reset">Reset</button>
+                            </div>
                         </label>
                     </div>
                 </form>
@@ -136,28 +140,36 @@
                 </div>
                 <div class="membership">
                     <h2>Membership Types</h2>
+                    <div class="black">
                     <img src="img/black-membership.png" alt="black membership icon">
-                    <h3>Black membership</h3>
-                    <ul>
-                        <li>Free access to the weight room</li>
-                        <li>Free acces to classes prior</li>
-                        <li>Registration</li>
-                        <li>Personalized monitoring by coach</li>
-                        <li>Grid display</li>
-                    </ul>
+                    <div class="black-ul">
+                        <h3>Black membership</h3>
+                        <ul>
+                            <li>Free access to the weight room</li>
+                            <li>Free acces to classes prior</li>
+                            <li>Registration</li>
+                            <li>Personalized monitoring by coach</li>
+                            <li>Grid display</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="classic">
                     <img src="img/classic.png" alt="classic membership icon">    
-                    <h3>Classic Membership</h3>
-                    <ul>
-                        <li>Registration</li>
-                        <li>Personalized monitoring by coach</li>
-                        <li>Grid display</li>       
-                    </ul>
-                    <img src="img/only.png" alt="only classes icon">
-                    <h3>Only classes membership</h3>
-                    <ul>
-                        <li>Free access to the weight room</li>
-                        <li>Grid display</li>
-                    </ul>
+                        <h3>Classic Membership</h3>
+                        <ul>
+                            <li>Registration</li>
+                            <li>Personalized monitoring by coach</li>
+                            <li>Grid display</li>       
+                        </ul>
+                    </div>
+                    <div class="only">
+                        <img src="img/only.png" alt="only classes icon">
+                        <h3>Only classes membership</h3>
+                        <ul>
+                            <li>Free access to the weight room</li>
+                            <li>Grid display</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>
