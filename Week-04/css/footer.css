@@ -3,7 +3,6 @@ footer{
     color: black;
     display: flex;
     justify-content: space-between;
-    padding: 0.9375rem;
     height: 3rem;
     font-size: 12px;
 }
@@ -16,4 +15,12 @@ footer img{
 footer .google {
     width: 1.25rem;
     height: 0.8125rem;
+}
+
+@media screen and (min-width:480px) {
+    footer{
+        width: 80vw;
+        margin-left: 20vw;
+    }
+    
 }

@@ -9,7 +9,7 @@
 
 .header h1{
     margin: auto;
-    font-size: 30px;
+    font-size: 1.975rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -22,3 +22,22 @@
     max-height: 47px;
 }
 
+@media screen and (min-width:480px) {
+    .header{
+        width: 80vw;
+        justify-content: space-around;
+        margin-left: 20vw;
+    }
+
+    .header h1{
+        margin: 0 10vw 0 0;
+        font-size: 3.75vw;
+    }
+
+    .logo-1{
+        display: inline;
+        margin: 2vw 0 0 2vw;
+        width: 35%;
+    }
+    
+}
