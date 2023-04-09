@@ -4,6 +4,7 @@
     background-color: #373867;
     color: #AACE9B;
     width: 100vw;
+    height: 15vw;
     min-height: 58px;
 }
 
@@ -26,7 +27,6 @@
     .header{
         width: 80vw;
         justify-content: space-around;
-        margin-left: 20vw;
     }
 
     .header h1{
