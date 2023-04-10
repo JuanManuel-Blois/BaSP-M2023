@@ -31,3 +31,14 @@ h2{
     }
     
 }
+
+@media screen and (min-width:1024px) {
+    body{
+        display: flex;
+    }
+    
+    .main-container{
+        width: 80vw;
+        height: 100%;
+    }
+}

@@ -410,3 +410,44 @@ main {
         width: 100%;
     }
 }
+
+@media screen and (min-width:1024px) {
+    .reason-health h2{
+        display: flex;
+        font-size: 2rem;
+        justify-content: start;
+        margin-left: 4vh;
+    }
+
+    .health-content{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around;
+        margin-left: 2vh;
+    }
+
+    .health-content img{
+        width: 45vw;
+    }
+
+    #help{
+        width: 90%;
+    }
+
+    .help-ul  {
+        height: 25rem;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .help-ul li {
+        width: 22rem;
+        height: 6.68rem;
+        font-size: 1.5rem;
+    }
+}

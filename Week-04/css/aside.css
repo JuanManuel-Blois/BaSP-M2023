@@ -225,3 +225,52 @@ aside{
     }
 
     }
+
+    @media screen and (min-width:1024px) {
+        aside a{
+            font-size: 1.25rem;
+        }
+
+        .logo-2 {
+            margin-top: 2rem;
+            order: 0;
+            width: 5rem;
+        }
+
+        .my-nav{
+            height: 25rem;
+        }
+
+        .my-nav ul{
+            height: 100%;
+        } 
+        
+        .my-nav ul li{
+            font-size: 1.25rem;
+            height: 4rem;
+        }
+
+        .options-1 a{
+            font-size: 1rem;
+        }
+
+        .other-options h2{
+            display: flex;
+            width: 100%;
+            font-size: 1.25rem;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .options-2 a{
+            font-size: 1rem;
+        }
+
+        .options-2 li a > img{
+            width: 1.5rem;
+        }
+
+        .options-2 li:nth-child(3) a > img{
+            width: 2rem;
+        }
+    }
