@@ -38,3 +38,21 @@ footer .google {
     }
 
 }
+
+@media screen and (min-width:1024px) {
+    footer{
+        height: 7.3rem;
+    }
+    
+    small{
+        font-size: 1.25rem;
+    }
+
+    footer img{
+        width: 3rem;
+    }
+
+    footer .google {
+        width: 3.5rem;
+    }
+}
