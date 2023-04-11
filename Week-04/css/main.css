@@ -35,6 +35,7 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 80vh;
+    width: 100vw;
     background-image: url('..//img/image-5.png');
     background-position: center;
     background-size: cover;
@@ -317,10 +318,6 @@ main {
         text-align: center;
     }
 
-    #help{
-        width: 80vw;
-    }
-
     .contact {
         width: 100%;
     }
@@ -513,8 +510,7 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        width: 80vw;
-        padding: 0 0 0 8vw;
+        width: 70vw;
     }
 
     .history-text {
