@@ -1,8 +1,6 @@
 main {
-    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .reason-health h2 {
@@ -27,46 +25,46 @@ main {
 }
 
 .health-content p {
-    padding: 0px 1.25rem 0px 1.25rem;
+    padding: 0 1.25rem 0 1.25rem;
     margin-top: 1.25rem;
 }
 
 #help {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
     background-image: url('..//img/image-5.png');
     background-position: center;
     background-size: cover;
-    height: 80vh;
-    width: 100vw;
 }
 
 .help-title {
+    margin: 1.25rem 3.125rem;
     color: white;
-    text-align: center;
     font-size: 2.5rem;
-    margin: 20px 50px;
+    text-align: center;
 }
 
 
 .help-ul {
-    height: 25rem;
-    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 25rem;
+    list-style: none;
 }
 
 .help-ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
-    width: 228px;
-    font-size: 15px;
+    height: 4.375rem;
+    width: 14.25rem;
+    font-size: 0.9375rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -76,7 +74,7 @@ main {
 }
 
 .help-text {
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 #help img {
@@ -94,7 +92,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 20%;
+    margin: 0 20%;
 }
 
 .contact img {
@@ -105,8 +103,8 @@ main {
 .form-item {
     display: flex;
     align-items: center;
-    font-size: 0.875rem;
     padding: 10% 10% 0% 10%;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 
@@ -115,7 +113,7 @@ main {
     height: 1.7rem;
     margin-left: 4rem;
     border: #000 solid 1px;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 #surname {
@@ -165,29 +163,29 @@ main {
 
 .message input[type="submit"] {
     padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 500;
     color: #373867;
     background-color: #AACE9B;
+    font-size: 1rem;
+    font-weight: 500;
     border-radius: 5px;
 }
 
 .message button[type="reset"] {
     padding: 0.5rem 1rem;
+    background-color: #fff;
     font-size: 1rem;
     font-weight: 500;
-    color: #373867;
-    background-color: #fff;
     border-radius: 5px;
+    color: #373867;
 }
 
 #history {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    width: 100vw;
+    margin-top: 4rem;
 }
 
 #history img {
@@ -195,16 +193,16 @@ main {
 }
 
 .history-text {
-    margin: 3.125rem 0px;
+    margin: 3.125rem 0;
     padding: 9rem 2rem;
-    text-align: justify;
-    text-shadow: 4px 4px 4px; 
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #fff;
     background-image: url('../img/image-6.png');
     background-position: center;
     background-size: cover;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: justify;
+    text-shadow: 4px 4px 4px; 
+    color: #fff;
 }
 
 .activity {
@@ -223,7 +221,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 25px 0 25px;
+    padding: 0 1.5625rem;
     margin: 1.4rem 0;
     font-size: 1.25rem;
     font-weight: 600;
@@ -246,9 +244,9 @@ main {
 }
 
 .black h3 {
+    padding: 10%;
     font-size: 1.25rem;
     font-weight: 700;
-    padding: 10%;
 }
 
 .black img {
@@ -269,9 +267,9 @@ main {
 }
 
 .classic h3 {
+    padding: 10%;
     font-size: 1.25rem;
     font-weight: 700;
-    padding: 10%;
 }
 
 .classic img {
@@ -292,9 +290,9 @@ main {
 }
 
 .only h3 {
+    padding: 10%;
     font-size: 1.25rem;
     font-weight: 700;
-    padding: 10%;
 }
 
 .only img {
@@ -311,24 +309,13 @@ main {
 @media screen and (min-width:480px) {
     main {
         width: 80vw;
+        align-items: center;
     }
 
     .reason-health h2 {
         font-size: 5vw;
         font-weight: 700;
         text-align: center;
-    }
-
-    #help {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background-image: url('..//img/image-5.png');
-        background-position: center;
-        background-size: cover;
-        height: 80vh;
-        width: 100%;
     }
 
     .contact {
@@ -360,6 +347,7 @@ main {
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin-top: 6rem;
     }
     
     .activities {
@@ -383,7 +371,7 @@ main {
     .activity ul {
         display: flex;
         flex-direction: column;
-        height: 30vh;
+        height: 60vw;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -426,6 +414,7 @@ main {
         width: 90%;
         justify-content: space-around;
         margin-left: 2vh;
+        font-size: 1.125rem;
     }
 
     .health-content img {
@@ -434,7 +423,7 @@ main {
 
     #help {
         width: 90%;
-        margin: 50px 0;
+        margin: 3.125rem 0;
     }
 
     .help-ul {
@@ -456,7 +445,7 @@ main {
     #contact {
         padding: 0;
         width: 90%;
-        margin: 50px 0;
+        margin: 3.125rem 0;
     }
 
     .contact-title{
@@ -471,8 +460,12 @@ main {
     }
 
     .form-item{
-        padding: 20px 0px;
+        padding: 1.25rem 0;
         font-size: 1rem;
+    }
+
+    .form-item input{
+        width: 85%;
     }
 
     .contact-general{
@@ -495,7 +488,7 @@ main {
 
     .message-text textarea{
         width: 70vw;
-        margin: 20px 0px;
+        margin: 1.25rem 0;
     }
 
     .message-inputs{
@@ -503,7 +496,7 @@ main {
     }
 
     .message input[type="submit"] {
-        margin: 0 15px 0 0;
+        margin: 0 0.9375rem 0 0;
     }
 
     #history {
@@ -519,7 +512,7 @@ main {
     }
 
     .activities{
-        margin-top: 50px;
+        margin-top: 3.125rem;
         display: flex;
         flex-direction: row;
         align-items: initial;
@@ -537,7 +530,11 @@ main {
     }
 
     .activity ul li{
-        width: 0;
-        justify-content: center;
+        width: 22vw;
+        justify-content: space-evenly;
+    }
+
+    .activity li > img {
+        width: 4.5rem;
     }
 }

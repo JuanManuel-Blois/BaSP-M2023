@@ -1,9 +1,9 @@
 footer{
-    background-color: #373867;
-    color: black;
     display: flex;
     justify-content: space-between;
     height: 3rem;
+    color: black;
+    background-color: #373867;
     font-size: 12px;
 }
 

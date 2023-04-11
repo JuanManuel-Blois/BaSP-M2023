@@ -2,6 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #373867;
 }
+
 .main-container{
     width: 100%;
     display: flex;
@@ -15,6 +16,7 @@ a{
 }
 
 h2{
+    align-self: center;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;

@@ -1,11 +1,11 @@
 .header{
     display: flex;
     align-items: center;
-    background-color: #373867;
-    color: #AACE9B;
     width: 100vw;
     height: 15vw;
-    min-height: 58px;
+    min-height: 3.625rem;
+    background-color: #373867;
+    color: #AACE9B;
 }
 
 .header h1{
@@ -44,7 +44,6 @@
 
 @media screen and (min-width:1024px) {
     .header{
-        width: 80vw;
         justify-content: start;
         height: 10vw;
     }
