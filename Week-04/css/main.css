@@ -318,6 +318,10 @@ main {
         text-align: center;
     }
 
+    #help{
+        width: 80vw;
+    }
+
     .contact {
         width: 100%;
     }
