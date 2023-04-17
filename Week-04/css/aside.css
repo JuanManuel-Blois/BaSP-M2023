@@ -1,4 +1,4 @@
-aside{
+aside {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -9,17 +9,17 @@ aside{
     background-color: #fff;
 }
 
-.burger{
+.burger {
     align-self: flex-start;
 }
 
-.logo-2{
+.logo-2 {
     margin-top: 2rem;
     order: 1;
     border: #AACE9B 1px solid;
 }
 
-.my-nav ul{
+.my-nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -28,7 +28,7 @@ aside{
     margin-top: 2rem;
 }
 
-.my-nav ul li{
+.my-nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,35 +41,35 @@ aside{
     text-transform: uppercase;
 }
 
-.my-nav ul li:nth-child(4){
+.my-nav ul li:nth-child(4) {
     display: none;
 }
 
-.button-1{
+.button-1 {
     background-color: #EBECF0;
 }
 
-.button-selection{
+.button-selection {
     background-color: #373867;
 }
 
-.button-selection a{
+.button-selection a {
     color: #fff;
 }
 
-.other-options h2{
+.other-options h2 {
     display: none;
 }
 
-.options-1{
+.options-1 {
     display: none;
 }
 
-.options-2{
+.options-2 {
     margin-top: 3rem;
 }
 
-.options-2 a{
+.options-2 a {
     font-size: 0.825rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -77,22 +77,17 @@ aside{
     align-items: center;
 }
 
-.options-2 li {
-    padding: 0 0 0 60vw;
-    width: 100vw;
-}
-
-.options-2 li a > img{
+.options-2 li a > img {
     width: 1.5rem;
     padding-right: 0.5rem;
 }
 
-.options-2 li:nth-child(3) a > img{
+.options-2 li:nth-child(3) a > img {
     width: 2rem;
     padding-right: 0.5rem;
 }
 
-.socials{
+.socials {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -102,17 +97,17 @@ aside{
     margin: 3rem 2rem 0 0;
 }
 
-.socials .insta{
+.socials .insta {
     width: 2rem;
     padding: 0.25rem;
 }
 
-.socials .face{
+.socials .face {
     width: 2rem;
     padding: 0.25rem;
 }
 
-.socials .google{
+.socials .google {
     width: 2rem;
     padding: 0.25rem;
 }
@@ -131,7 +126,7 @@ aside{
         order: 0;
     }
     
-    .burger{
+    .burger {
         display: none;
     }
 
@@ -139,13 +134,13 @@ aside{
         display: none;
     } 
 
-    .my-nav{
+    .my-nav {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .my-nav ul{
+    .my-nav ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -154,7 +149,7 @@ aside{
         margin-top: 2rem;
     }
 
-    .my-nav ul li{
+    .my-nav ul li {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -168,18 +163,18 @@ aside{
         text-transform: uppercase;
     }
 
-    .my-nav ul li:nth-child(4){
+    .my-nav ul li:nth-child(4) {
         display: flex;
     }
 
-    .other-options{
+    .other-options {
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-top: 2vh;
     }
 
-    .other-options h2{
+    .other-options h2 {
         display: flex;
         width: 100%;
         font-size: 3vw;
@@ -187,7 +182,7 @@ aside{
         text-align: center;
     }
     
-    .options-1{
+    .options-1 {
         display: flex;
         flex-direction: column;
         margin-top: 1vh;
@@ -196,13 +191,13 @@ aside{
         margin-left: 1.5vw;
     }
 
-    .options-2{
+    .options-2 {
         width: 100%;
         margin-top: 2vh;
         font-size: 1vw;
     }
 
-    .options-2 a{
+    .options-2 a {
         font-size: 1.5vw;
         font-weight: 700;
         margin-bottom: 1rem;
@@ -213,20 +208,20 @@ aside{
         padding: 0 0 0 1vw;
     }
 
-    .options-2 li a > img{
+    .options-2 li a > img {
         width: 3vw;
         padding-right: 0.5rem;
     }
     
-    .options-2 li:nth-child(3) a > img{
+    .options-2 li:nth-child(3) a > img {
         width: 3.5vw;
         padding-right: 0.5rem;
     }
 
-    }
+}
 
     @media screen and (min-width:1024px) {
-        aside a{
+        aside a {
             font-size: 1.25rem;
         }
 
@@ -236,24 +231,24 @@ aside{
             width: 5rem;
         }
 
-        .my-nav{
+        .my-nav {
             height: 25rem;
         }
 
-        .my-nav ul{
+        .my-nav ul {
             height: 100%;
         } 
         
-        .my-nav ul li{
+        .my-nav ul li {
             font-size: 1.25rem;
             height: 4rem;
         }
 
-        .options-1 a{
+        .options-1 a {
             font-size: 1rem;
         }
 
-        .other-options h2{
+        .other-options h2 {
             display: flex;
             width: 100%;
             font-size: 1.25rem;
@@ -261,15 +256,15 @@ aside{
             text-align: center;
         }
 
-        .options-2 a{
+        .options-2 a {
             font-size: 1rem;
         }
 
-        .options-2 li a > img{
+        .options-2 li a > img {
             width: 1.5rem;
         }
 
-        .options-2 li:nth-child(3) a > img{
+        .options-2 li:nth-child(3) a > img {
             width: 2rem;
         }
-    }
+}

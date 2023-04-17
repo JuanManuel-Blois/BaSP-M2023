@@ -145,7 +145,6 @@ main {
 .message {
     display: flex;
     flex-direction: column;
-    height: 26vh;
     margin: 0 1.75rem;
     font-size: 0.875rem;
     font-weight: 700;
@@ -195,7 +194,7 @@ main {
 .history-text {
     margin: 3.125rem 0;
     padding: 9rem 2rem;
-    background-image: url('../img/image-6.png');
+    background-image: url('../img/image-girl-blur.png');
     background-position: center;
     background-size: cover;
     font-size: 1.25rem;
@@ -217,9 +216,14 @@ main {
     align-self: center;
 }
 
+.activity ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
 .activity li {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding: 0 1.5625rem;
     margin: 1.4rem 0;
@@ -229,6 +233,7 @@ main {
 
 .activity li > img {
     width: 3rem;
+    padding: 0 1rem 0 0;
 }
 
 .membership {
@@ -318,7 +323,7 @@ main {
         text-align: center;
     }
 
-    #help{
+    #help {
         width: 80vw;
     }
 
@@ -373,15 +378,15 @@ main {
     }
 
     .activity ul {
-        display: flex;
-        flex-direction: column;
-        height: 60vw;
+        height: 16.875rem;
         flex-wrap: wrap;
         align-items: center;
+        margin: 0;
     }
 
     .activity ul li {
-        width: 25vw;
+        width: 11.3rem;
+        padding: 0;
     }
     
     .membership {
@@ -403,8 +408,6 @@ main {
 }
 
 @media screen and (min-width:1024px) {
-
-
     .reason-health h2 {
         display: flex;
         font-size: 2rem;
@@ -452,52 +455,47 @@ main {
         margin: 3.125rem 0;
     }
 
-    .contact-title{
+    .contact-title {
         width: 100%;
         margin: 0;
         justify-content: start;
     }
     
-    .reason-contact{
+    .reason-contact {
         padding: 0.5rem 0;
         font-size: 1.125rem;
     }
 
-    .form-item{
+    .form-item {
         padding: 1.25rem 0;
         font-size: 1rem;
     }
 
-    .form-item input{
+    .form-item input {
         width: 30%;
         height: 2.5rem;
         border: 1px #373867 solid;
     }
 
-    .contact-general{
-        height: 60vh;
-    }
-
-    .contact-general h3{
+    .contact-general h3 {
         font-size: 1.25rem;
         padding: 0;
     }
 
     .message {
-        height: 25vh;
         margin: 1.5rem 0;
     }
 
-    .message-text{
+    .message-text {
         width: 70%;
     }
 
-    .message-text textarea{
+    .message-text textarea {
         width: 70vw;
         margin: 1.25rem 0;
     }
 
-    .message-inputs{
+    .message-inputs {
         justify-content: initial;
     }
 
@@ -519,30 +517,31 @@ main {
 
     .history-text {
         font-size: 2vw;
-        padding: 15rem;
+        padding: 15rem 5rem;
+        background-image: url('../img/image-6.png');
         text-shadow: none;
         border: #000 1px solid;
     }
 
-    .activities{
+    .activities {
         margin-top: 3.125rem;
         display: flex;
         flex-direction: row;
         align-items: initial;
     }
 
-    .activity{
+    .activity {
         flex-direction: column;
         margin: 0;
     }
 
-    .activity ul{
+    .activity ul {
         flex-wrap: nowrap;
         height: initial;
         
     }
 
-    .activity ul li{
+    .activity ul li {
         width: 22vw;
         justify-content: space-evenly;
     }

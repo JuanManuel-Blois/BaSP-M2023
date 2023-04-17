@@ -1,13 +1,14 @@
-footer{
+footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 3rem;
     color: black;
     background-color: #373867;
     font-size: 12px;
 }
 
-footer img{
+footer img {
     width: 1rem;
 }
 
@@ -16,39 +17,46 @@ footer .google {
 }
 
 @media screen and (min-width:480px) {
-    footer{
+    footer {
         width: 80vw;
         align-items: center;
     }   
 
-    small{
+    small {
         font-size: 2vw;
         margin-left: 2vw;
     }
 
-    .footer-img{
+    .footer-img {
         display: flex;
         flex-direction: row-reverse;
-        width: 6vw;
         padding: 1vw;
     }
 
-    footer img{
+    footer img {
         padding: 1vw;
+    }
+
+    footer img {
+        width: 2rem;
+    }
+    
+    footer .google {
+        width: 2.25rem;
     }
 
 }
 
 @media screen and (min-width:1024px) {
-    footer{
+    footer {
         height: 7.3rem;
     }
     
-    small{
+    small {
         font-size: 1.25rem;
     }
 
-    footer img{
+    footer img {
         width: 3rem;
     }
 
