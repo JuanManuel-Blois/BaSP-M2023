@@ -244,8 +244,8 @@ main {
 
 .black {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 .black h3 {
@@ -267,8 +267,8 @@ main {
 
 .classic {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 .classic h3 {
@@ -290,8 +290,8 @@ main {
 
 .only {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 .only h3 {
