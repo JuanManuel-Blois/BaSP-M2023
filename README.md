@@ -27,6 +27,12 @@ aside{
     display: none => flex
 }
 
+## Week 05
+
+[My site for delivery of week 05](https://juanmanuel-blois.github.io/BaSP-M2023/Week-05/Index.html)
+
+On Week 05 we worked on javascript exercises and practice
+
 
 ## Authors
 - Juan Manuel Blois
