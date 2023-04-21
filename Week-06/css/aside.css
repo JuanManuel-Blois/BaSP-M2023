@@ -1,0 +1,270 @@
+aside {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.burger {
+    align-self: flex-start;
+}
+
+.logo-2 {
+    margin-top: 2rem;
+    order: 1;
+    border: #AACE9B 1px solid;
+}
+
+.my-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35vh;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.my-nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.5rem;
+    height: 4.3rem;
+    border: 1px #AACE9B solid;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.my-nav ul li:nth-child(4) {
+    display: none;
+}
+
+.button-1 {
+    background-color: #EBECF0;
+}
+
+.button-selection {
+    background-color: #373867;
+}
+
+.button-selection a {
+    color: #fff;
+}
+
+.other-options h2 {
+    display: none;
+}
+
+.options-1 {
+    display: none;
+}
+
+.options-2 {
+    margin-top: 3rem;
+}
+
+.options-2 a {
+    font-size: 0.825rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.options-2 li a > img {
+    width: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.options-2 li:nth-child(3) a > img {
+    width: 2rem;
+    padding-right: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    order: 2;
+    width: 100vw;
+    margin: 3rem 2rem 0 0;
+}
+
+.socials .insta {
+    width: 2rem;
+    padding: 0.25rem;
+}
+
+.socials .face {
+    width: 2rem;
+    padding: 0.25rem;
+}
+
+.socials .google {
+    width: 2rem;
+    padding: 0.25rem;
+}
+
+@media screen and (min-width:480px) {
+    aside {
+        display: flex;
+        position: sticky;
+        width: 20vw;
+        top: 0;
+        background-color: #AACE9B;
+    }
+
+    .logo-2 {
+        margin-top: 2rem;
+        order: 0;
+    }
+    
+    .burger {
+        display: none;
+    }
+
+    .socials {
+        display: none;
+    } 
+
+    .my-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .my-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 25vh;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .my-nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 4vh;
+        border: 1px #AACE9B solid;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .my-nav ul li:nth-child(4) {
+        display: flex;
+    }
+
+    .other-options {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+    .other-options h2 {
+        display: flex;
+        width: 100%;
+        font-size: 3vw;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .options-1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+        font-size: 2vw;
+        font-weight: 600;
+        margin-left: 1.5vw;
+    }
+
+    .options-2 {
+        width: 100%;
+        margin-top: 2vh;
+        font-size: 1vw;
+    }
+
+    .options-2 a {
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .options-2 li {
+        width: 100%;
+        padding: 0 0 0 1vw;
+    }
+
+    .options-2 li a > img {
+        width: 3vw;
+        padding-right: 0.5rem;
+    }
+    
+    .options-2 li:nth-child(3) a > img {
+        width: 3.5vw;
+        padding-right: 0.5rem;
+    }
+
+}
+
+    @media screen and (min-width:1024px) {
+        aside a {
+            font-size: 1.25rem;
+        }
+
+        .logo-2 {
+            margin-top: 2rem;
+            order: 0;
+            width: 5rem;
+        }
+
+        .my-nav {
+            height: 25rem;
+        }
+
+        .my-nav ul {
+            height: 100%;
+        } 
+        
+        .my-nav ul li {
+            font-size: 1.25rem;
+            height: 4rem;
+        }
+
+        .options-1 a {
+            font-size: 1rem;
+        }
+
+        .other-options h2 {
+            display: flex;
+            width: 100%;
+            font-size: 1.25rem;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .options-2 a {
+            font-size: 1rem;
+        }
+
+        .options-2 li a > img {
+            width: 1.5rem;
+        }
+
+        .options-2 li:nth-child(3) a > img {
+            width: 2rem;
+        }
+}
