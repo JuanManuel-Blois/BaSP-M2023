@@ -1,0 +1,133 @@
+.login-aside{
+    display: none;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 10vh 0 0 0;
+}
+
+.login-logo{
+    width: 15rem;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.data-input{
+    display: flex;
+    justify-content: center;
+}
+
+.data-input img{
+    height: 1rem;
+    margin: 2.25rem 0.5rem 0 0;
+}
+
+
+.login-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 1rem 0 ;
+}
+
+.login-data p{
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-data input{
+    height: 2rem;
+    border: 1px solid #373867;
+    border-radius: 5px;
+}
+
+.login-assist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    width: 15rem;;
+}
+
+.login-assist a{
+    color: #011AF9
+}
+
+.log-button{
+    height: 4.6rem;
+    width: 13.125rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #373867;
+    background-color: #cbcbcb;
+    border: 1px solid #373867;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:480px) {
+    #login{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        background-image: url(../../assets/img/image-running.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .login-logo{
+        margin-top: 10vh;
+    }
+
+    .login-assist{
+        color: #fff;
+    }
+
+    .login-assist a{
+        color: #fff
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .login-aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50vw;
+        height: 100vh;
+        background-image: url(../../assets/img/image-running.png);
+        background-position: center;
+        background-size: cover; 
+    }
+
+    #login{
+        width: 50vw;
+        background: none;
+    }
+
+    .back-button{
+        width: 2.5rem;
+        margin: 2rem;
+    }
+
+    .login-logo-2{
+        width: 25rem;
+        margin-left: 1rem;
+    }
+
+    .login-assist{
+        color: #373867;
+    }
+
+    .login-assist a{
+        color: #011AF9;
+    }
+}
