@@ -10,10 +10,6 @@
     margin: 10vh 0 0 0;
 }
 
-.login-logo{
-    width: 15rem;
-}
-
 .login-form{
     display: flex;
     flex-direction: column;
@@ -111,16 +107,6 @@
     #login{
         width: 50vw;
         background: none;
-    }
-
-    .back-button{
-        width: 2.5rem;
-        margin: 2rem;
-    }
-
-    .login-logo-2{
-        width: 25rem;
-        margin-left: 1rem;
     }
 
     .login-assist{

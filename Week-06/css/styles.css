@@ -27,6 +27,26 @@ h2 {
     width: 100vw;
 }
 
+.login-logo{
+    width: 15rem;
+}
+
+.login-logo-2{
+    width: 25rem;
+    margin-left: 1rem;
+}
+
+.sign-up-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+}
+
+.back-button{
+    width: 2.5rem;
+    margin: 2rem;
+}
+
 @media screen and (min-width:480px) {
     body {
         display: flex;
