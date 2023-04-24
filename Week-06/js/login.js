@@ -5,12 +5,15 @@ emailInput.addEventListener("blur", function() {
     if (!emailExpression.test(emailInput.value)) {
         emailInput.style.borderColor = "red";
         var error = emailInput.parentElement.parentElement.querySelector(".message");
-        error.textContent = "Insert a valid email address"
+        error.textContent = "Insert a valid email address";
+        error.classList.remove("hidden");
     }
 })
 
 emailInput.addEventListener("focus", function() {
-    emailInput.style.borderColor = "#373867"
+    emailInput.style.borderColor = "#373867";
+    var error = emailInput.parentElement.parentElement.querySelector(".message");
+    error.classList.add("hidden");
 })
 
 var pass = document.querySelector(`input[name="pass"]`);
@@ -22,7 +25,8 @@ function validatePass(){
     if(specialCharacterCheck(passValue)){
         pass.style.borderColor = "red";
         var error = pass.parentElement.parentElement.querySelector(".message");
-        error.textContent = "Only numbers and letters are valid"
+        error.textContent = "Only numbers and letters are valid";
+        error.classList.remove("hidden");
 }
 }
 
@@ -37,31 +41,28 @@ function specialCharacterCheck(wordInput) {
 }
 
 pass.addEventListener("focus", function(){
-    pass.style.borderColor = "#373867"
+    pass.style.borderColor = "#373867";
+    var error = pass.parentElement.parentElement.querySelector(".message");
+    error.classList.add("hidden")
 })
 
 var loginButton = document.querySelector("#login-button")
 loginButton.addEventListener("click", function(){
-    var emailCheck = emailExpression.test(emailInput.value)
-    var passCheck = specialCharacterCheck(pass.value)
+    var emailCheck = emailExpression.test(emailInput.value);
+    var passCheck = specialCharacterCheck(pass.value);
 
     if(!emailCheck){
-        var emailError = "Invalid email address"
-        alert (emailError)
+        var emailError = "Invalid email address";
+        alert (emailError);
     }
     if(passCheck){
-        var passError = "Invalid password"
-        alert (passError)
+        var passError = "Invalid password";
+        alert (passError);
     }
     if(!emailCheck && passCheck){
-        alert("Invalid email & password")
+        alert("Invalid email & password");
     }
     if(emailCheck && !passCheck){
-        alert("email " + emailInput.value + " password " + pass.value)
+        alert("email " + emailInput.value + " password " + pass.value);
     }
 })
-
-
-console.log(loginButton)
-
-
