@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../css/reset.css">
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
         <link rel="stylesheet" type="text/css" href="../css/login.css">
+        <script defer src="../js/login.js"></script>
     </head>
     <body>
         <div class="login-container">
@@ -20,16 +21,18 @@
                 <form class="login-form">
                     <div class="data-input">
                         <img src="../../assets/img/user-icon.png" alt="user icon">
-                        <label class="login-data">
-                            <p>User</p>
-                            <input type="text" placeholder="Insert User">
+                        <label id="email-data" class="login-data">
+                            <p>Email</p>
+                            <input type="email" name="e-mail" placeholder="Insert Email">
                         </label>
+                        <p class="message"></p>
                     </div>
                     <div class="data-input">
                         <img src="../../assets/img/password-icon.png" alt="pass icon">
                         <label class="login-data">
-                            <p>Password</p> <input type="text" placeholder="Insert Password">
+                            <p>Password</p> <input type="password" name="pass" placeholder="Insert Password">
                         </label>
+                        <p class="message"></p>
                     </div>
                     <div class="login-assist">
                     <label class="login-keep">
@@ -39,7 +42,7 @@
                     <a href="#">Forgot password?</a>
                     </div>
                 </form>
-                <button class="log-button" type="button">Log in</button>
+                <button id="login-button" class="log-button" type="button">Log in</button>
             </main>
         </div>
     </body>
