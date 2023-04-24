@@ -50,19 +50,16 @@ var loginButton = document.querySelector("#login-button")
 loginButton.addEventListener("click", function(){
     var emailCheck = emailExpression.test(emailInput.value);
     var passCheck = specialCharacterCheck(pass.value);
-
+    if(!emailCheck && passCheck){
+        return alert("Invalid email & password");
+    }
     if(!emailCheck){
         var emailError = "Invalid email address";
-        alert (emailError);
+        return alert (emailError);
     }
     if(passCheck){
         var passError = "Invalid password";
-        alert (passError);
+        return alert (passError);
     }
-    if(!emailCheck && passCheck){
-        alert("Invalid email & password");
-    }
-    if(emailCheck && !passCheck){
         alert("email " + emailInput.value + " password " + pass.value);
-    }
 })

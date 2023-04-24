@@ -26,11 +26,6 @@
     margin: 2.25rem 0.5rem 0 0;
 }
 
-.message{
-    font-size: 0.8125rem;
-    color: red;
-}
-
 .login-data{
     display: flex;
     flex-direction: column;
