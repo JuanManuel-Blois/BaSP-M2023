@@ -1,3 +1,5 @@
+// Name Validation -----------------------
+
 var inputName = document.querySelector(`input[name="input-name"]`)
 
 function specialCharacterCheck(wordInput) {
