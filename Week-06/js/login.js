@@ -22,22 +22,38 @@ pass.addEventListener("blur", validatePass)
 
 function validatePass(){
     var passValue = pass.value;
-    if(specialCharacterCheck(passValue)){
-        pass.style.borderColor = "red";
-        var error = pass.parentElement.parentElement.querySelector(".message");
-        error.textContent = "Only numbers and letters are valid";
-        error.classList.remove("hidden");
-}
-}
+    var hasLetters = false;
+    var hasNumbers = false;
 
-function specialCharacterCheck(wordInput) {
-    var specialCharacters = "/[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?]+/";
-    for (var i = 0; i < wordInput.length; i++) {
-        if (specialCharacters.indexOf(wordInput.charAt(i)) != -1) {
-            return true;
+    for (var i = 0; i < passValue.length; i++) {
+        var characters = passValue.charAt(i);
+        if (!isNaN(characters)) {
+            hasNumbers = true;
+        } else {
+            hasLetters = true;
         }
     }
-    return false;
+    
+    if(passValue.length < 8){
+        pass.style.borderColor = "red";
+        var error = pass.parentElement.parentElement.querySelector(".message");
+        error.textContent = "Password must contain as minimum 8 characters";
+        error.classList.remove("hidden");
+    }
+
+    if (!hasLetters) {
+        pass.style.borderColor = "red";
+        var error = pass.parentElement.parentElement.querySelector(".message");
+        error.textContent = "Password must contain letters";
+        error.classList.remove("hidden");
+    }
+    
+    if (!hasNumbers) {
+        pass.style.borderColor = "red";
+        var error = pass.parentElement.parentElement.querySelector(".message");
+        error.textContent = "Password must contain numbers";
+        error.classList.remove("hidden");
+    }
 }
 
 pass.addEventListener("focus", function(){
@@ -45,6 +61,7 @@ pass.addEventListener("focus", function(){
     var error = pass.parentElement.parentElement.querySelector(".message");
     error.classList.add("hidden")
 })
+
 
 var loginButton = document.querySelector("#login-button")
 loginButton.addEventListener("click", function(){
