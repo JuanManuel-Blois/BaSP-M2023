@@ -1,5 +1,3 @@
-// Name Validation -----------------------
-
 var inputName = document.querySelector(`input[name="input-name"]`)
 
 function specialCharacterCheck(wordInput) {
@@ -45,8 +43,6 @@ inputName.addEventListener("focus", function(){
     error.classList.add("hidden");
 })
 
-//Surname-----------------------------------
-
 var inputSurname = document.querySelector(`input[name="surname"]`)
 
 var surnameValidate = function(){
@@ -79,8 +75,6 @@ inputSurname.addEventListener("focus", function(){
     var error = inputSurname.parentElement.parentElement.querySelector(".message");
     error.classList.add("hidden");
 })
-
-//DNI----------------------------------------------------
 
 var inputNationalDoc = document.querySelector(`input[name="national-doc"]`)
 
@@ -115,7 +109,6 @@ inputNationalDoc.addEventListener("focus", function(){
     error.classList.add("hidden");
 })
 
-//Date of birth-------------------------------------------
 var dateInput = document.querySelector(`input[name="date-birth"]`)
 console.log(dateInput)
 dateValue = dateInput.value
@@ -142,7 +135,6 @@ dateInput.addEventListener("focus", function(){
     error.classList.add("hidden");
 })
 
-//Phone Number--------------------------------------------
 
 var inputPhone = document.querySelector(`input[name="phone"]`)
 
@@ -177,7 +169,6 @@ inputPhone.addEventListener("focus", function(){
     error.classList.add("hidden");
 })
 
-//Address ---------------------------------------------------
 var addressInput = document.querySelector(`input[name="address"]`);
 
 var addressValidation = function(){
@@ -228,7 +219,6 @@ addressInput.addEventListener("focus", function(){
     error.classList.add("hidden");
 })
 
-//City of residence -----------------------------------------
 var cityOfResidence = document.querySelector(`input[name="city-resident"]`);
 
 function specialCharacterCheckTwo(wordInput) {
@@ -289,8 +279,6 @@ cityOfResidence.addEventListener("focus", function(){
     error.classList.add("hidden");
 })
 
-//postal code-------------------
-
 var postalInput = document.querySelector (`input[name ="postal-code"]`);
 
 var postalValidation = function(){
@@ -324,7 +312,6 @@ postalInput.addEventListener("focus", function(){
     error.classList.add("hidden");
 })
 
-//email-------------
 var emailInput = document.querySelector(`input[name="e-mail"]`);
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 
@@ -351,8 +338,6 @@ emailInput.addEventListener("focus", function() {
     var error = emailInput.parentElement.parentElement.querySelector(".message");
     error.classList.add("hidden");
 })
-
-//password--------------
 
 var pass = document.querySelector(`input[name="pass"]`);
 
@@ -408,8 +393,6 @@ pass.addEventListener("focus", function(){
     error.classList.add("hidden")
 })
 
-//repeat pass --------
-
 var repeatPass = document.querySelector(`input[name="repeat-pass"]`)
 
 var repeatValidation = function(){
@@ -435,8 +418,6 @@ repeatPass.addEventListener("focus", function(){
     var error = repeatPass.parentElement.parentElement.querySelector(".message");
     error.classList.add("hidden")
 })
-
-//All validations -----------------------
 
 var validateAll = function(){
     var array = [];

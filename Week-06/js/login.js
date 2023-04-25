@@ -1,5 +1,3 @@
-//Email Validation -------------------------
-
 var emailInput = document.querySelector(`input[name="e-mail"]`);
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 
@@ -23,8 +21,6 @@ emailInput.addEventListener("focus", function() {
     var error = emailInput.parentElement.parentElement.querySelector(".message");
     error.classList.add("hidden");
 })
-
-//Password Validation ---------------------
 
 var pass = document.querySelector(`input[name="pass"]`);
 
@@ -80,8 +76,6 @@ pass.addEventListener("focus", function(){
     var error = pass.parentElement.parentElement.querySelector(".message");
     error.classList.add("hidden")
 })
-
-//Validate all ------------------
 
 var validateAll = function(){
     var array = [];
