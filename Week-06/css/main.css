@@ -36,7 +36,7 @@ main {
     align-items: center;
     height: 80vh;
     width: 100vw;
-    background-image: url('..//img/image-5.png');
+    background-image: url('../../assets/img/image-5.png');
     background-position: center;
     background-size: cover;
 }
@@ -194,7 +194,7 @@ main {
 .history-text {
     margin: 3.125rem 0;
     padding: 9rem 2rem;
-    background-image: url('../img/image-girl-blur.png');
+    background-image: url('../../assets/img/image-girl-blur.png');
     background-position: center;
     background-size: cover;
     font-size: 1.25rem;
@@ -518,7 +518,7 @@ main {
     .history-text {
         font-size: 2vw;
         padding: 15rem 5rem;
-        background-image: url('../img/image-6.png');
+        background-image: url('../../assets/img/image-6.png');
         text-shadow: none;
         border: #000 1px solid;
     }

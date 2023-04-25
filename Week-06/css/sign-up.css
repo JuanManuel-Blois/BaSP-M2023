@@ -1,39 +1,27 @@
-.signup-aside {
-    width: 50vw;
-    background-image: url(../../assets/img/image-dumbell-signup.png);
-    background-position: center;
-    background-size: cover;
-    border: none;
-}
-
-.login-logo-2{
-    margin-top: 1rem;
-    margin-left: 18rem;
+.signup-aside{
+    display: none;
 }
 
 #sign-up{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 100%;
+}
+
+.register-data{
+    display: flex;
 }
 
 .register-data{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 0.8125rem;
-}
-
-.register-data img{
-    margin: 0 auto;
-    width: 11rem;
 }
 
 .form-display{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 30rem;
 }
 
 .register-item{
@@ -44,19 +32,121 @@
     height: 2rem;
     width: 15rem;
     margin-top: 0.25rem;
+    border: 1px solid #373867;
 }
 
-.terms-conditions{
-    display: flex;
-    align-items: center;
+.formGroup{
+    height: 4.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .register-button{
-    width: 13.125rem;
-    height: 4.875rem;
-    margin: 0 auto;
+    width: 10rem;
+    height: 3rem;
+    margin: 1.25rem auto;
     background-color: #AACE9B;
     color: #373867;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.terms-conditions{
+    display: flex;
+}
+
+@media screen and (min-width:480px){
+    #sign-up{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        background-image: url(../../assets/img/image-dumbell-signup.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .register-item{
+        font-size: 1.5rem;
+        color: #fff;
+        border-color: #373867 0.5px;
+    }
+
+    .terms-conditions{
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .login-link{
+        font-size: 1rem;
+        color: #fff;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .signup-aside {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        background-image: url(../../assets/img/image-dumbell-signup.png);
+        background-position: center;
+        background-size: cover;
+        border: none;
+    }
+
+    .login-logo-2{
+        margin-top: 1rem;
+        margin-left: 18rem;
+    }
+
+    #sign-up{
+        width: 50vw;
+        background-image: none;
+    }
+
+    .register-data img{
+        margin: 0 auto;
+        width: 11rem;
+    }
+
+    .register-data{
+        align-items: none;
+        font-size: 0.8125rem;
+    }
+
+    .form-display{
+        flex-wrap: wrap;
+        align-items: center;
+        height: 33rem;
+        width: 100%;
+    }
+
+    .register-item{
+        font-size: 1rem;
+        color: #373867;
+        border-color: #373867 0.5px;
+    }
+
+    .terms-conditions{
+        display: flex;
+        align-items: center;
+        color: #373867;
+    }
+
+    .register-button{
+        width: 13.125rem;
+        height: 4.875rem;
+    }
+
+    .formGroup{
+        width: 16.875rem;
+        height: 4.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .login-link{
+        margin: auto;
+        font-size: 1rem;
+        color: #373867;
+    }
+
 }

@@ -68,6 +68,10 @@
     border-radius: 5px;
 }
 
+.sign-up-link{
+    margin-top: 2rem;
+}
+
 @media screen and (min-width:480px) {
     #login{
         height: 100vh;
