@@ -33,6 +33,12 @@ aside{
 
 On Week 05 we worked on javascript exercises and practice
 
+## Week 06
+
+[My site for delivery](https://juanmanuel-blois.github.io/BaSP-M2023/Week-06/views/Index.html)
+
+On Week 06 we worked on javascript in a practical manner developing the site we've been working on
+
 
 ## Authors
 - Juan Manuel Blois
