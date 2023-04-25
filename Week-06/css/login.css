@@ -21,6 +21,11 @@
     justify-content: center;
 }
 
+.input-text{
+    display: flex;
+    flex-direction: column;
+}
+
 .data-input img{
     height: 1rem;
     margin: 2.25rem 0.5rem 0 0;
