@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 15vw;
+    min-height: 3.625rem;
+    background-color: #373867;
+    color: #AACE9B;
+}
+
+.header h1 {
+    margin: auto;
+    font-size: 8vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo-1 {
+    display: none;
+}
+
+.burger {
+    max-height: 47px;
+}
+
+@media screen and (min-width:480px) {
+    .header {
+        width: 80vw;
+        justify-content: space-around;
+    }
+
+    .header h1 {
+        margin: 0 10vw 0 0;
+        font-size: 3.75vw;
+    }
+
+    .logo-1 {
+        display: inline;
+        margin: 2vw 0 0 2vw;
+        width: 35%;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .header {
+        justify-content: start;
+        height: 10vw;
+    }
+
+    .header h1 {
+        margin: 0 0 0 3vw;
+        font-size: 2.5rem;
+    }
+
+    .logo-1 {
+        display: inline;
+        margin: 1vw 0 0 2vw;
+        width: 15rem;
+    }
+            
+}
