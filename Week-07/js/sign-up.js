@@ -493,4 +493,19 @@ registerButton.addEventListener("click", function(e){
     } else {
         alert(returnValidation)
     }
+
+    var url = `https://api-rest-server.vercel.app/signup?name=${inputName.value}&lastName=${inputSurname.value}&dni=${inputNationalDoc.value}&dob=${dateInput.value}&phone=${inputPhone.value}&address=${addressInput.value}&city=${cityOfResidence.value}&zip=${postalInput.value}&email=${emailInput.value}&password=${pass.value}`;
+
+    fetch(url)
+        .then(function(res){
+            if(res.status.ok) throw new Error("Error")
+            return res.json()
+        })
+        .then (function(data){
+            console.log(data)
+            alert(data.msg + " " + JSON.stringify(data))
+        })
+        .catch (function(err){
+            alert(err)
+        })
 })

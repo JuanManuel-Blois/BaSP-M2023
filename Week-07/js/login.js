@@ -104,4 +104,21 @@ var loginButton = document.querySelector("#login-button")
         } else {
             alert(returnValidation)
         }
-})
+
+        var url = `https://api-rest-server.vercel.app/login?email=${emailInput.value}&password=${pass.value}`;
+
+            fetch(url)
+                .then(function(res){
+                    if(res.status.ok) throw new Error("Error")
+                    return res.json()
+                })
+                .then (function(data){
+                    console.log(data)
+                    alert(data.msg + " " + JSON.stringify(data))
+                })
+                .catch (function(err){
+                    alert(err)
+                })
+        }
+
+        )
