@@ -494,7 +494,17 @@ registerButton.addEventListener("click", function(e){
         alert(returnValidation)
     }
 
-    var url = `https://api-rest-server.vercel.app/signup?name=${inputName.value}&lastName=${inputSurname.value}&dni=${inputNationalDoc.value}&dob=${dateInput.value}&phone=${inputPhone.value}&address=${addressInput.value}&city=${cityOfResidence.value}&zip=${postalInput.value}&email=${emailInput.value}&password=${pass.value}`;
+    var url = `https://api-rest-server.vercel.app/signup?
+    name=${inputName.value}&
+    lastName=${inputSurname.value}&
+    dni=${inputNationalDoc.value}&
+    dob=${dateInput.value}&
+    phone=${inputPhone.value}&
+    address=${addressInput.value}&
+    city=${cityOfResidence.value}&
+    zip=${postalInput.value}&
+    email=${emailInput.value}&
+    password=${pass.value}`;
 
     fetch(url)
         .then(function(res){

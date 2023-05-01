@@ -109,15 +109,21 @@ var loginButton = document.querySelector("#login-button")
 
             fetch(url)
                 .then(function(res){
-                    if(res.status.ok) throw new Error("Error")
                     return res.json()
                 })
                 .then (function(data){
-                    console.log(data)
-                    alert(data.msg + " " + JSON.stringify(data))
+                    if(!data.success){throw new Error(data)};
+                    alert(data.msg)
+                    
                 })
                 .catch (function(err){
-                    alert(err)
+                    console.log(err)
+
+                    // if(typeof err.msg == true){
+                    //     for(var i = 0; i < err.errors.length; i++){
+                    //         alert(err.errors[i].msg)
+                    //     };
+                    // }
                 })
         }
 
