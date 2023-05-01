@@ -57,7 +57,6 @@ var surnameValidate = function(){
         return false
 
     } else if(specialCharacterCheck(surnameValue)){
-        console.log("there is a special character")
         inputName.style.borderColor = "red";
         var error = inputSurname.parentElement.parentElement.querySelector(".message");
         error.textContent = "Only letters are valid characters";
@@ -110,7 +109,6 @@ inputNationalDoc.addEventListener("focus", function(){
 })
 
 var dateInput = document.querySelector(`input[name="date-birth"]`)
-console.log(dateInput)
 dateValue = dateInput.value
 
 var dateValidation = function(){
@@ -418,6 +416,17 @@ repeatPass.addEventListener("focus", function(){
     error.classList.add("hidden")
 })
 
+inputName.value = localStorage.getItem("name")
+inputSurname.value = localStorage.getItem("last name")
+inputNationalDoc.value = localStorage.getItem("dni")
+dateInput.value = localStorage.getItem("dob")
+inputPhone.value = localStorage.getItem("phone")
+addressInput.value = localStorage.getItem("address")
+cityOfResidence.value = localStorage.getItem("city")
+postalInput.value = localStorage.getItem("zip")
+emailInput.value = localStorage.getItem("email")
+pass.value = localStorage.getItem("password")
+
 var validateAll = function(){
     var array = [];
     if(!nameValidate()){
@@ -511,21 +520,26 @@ registerButton.addEventListener("click", function(e){
         return res.json()
     })
     .then (function(data){
-        console.log(inputName.value)
-        console.log(data)
         if(!data.success && typeof data.errors !== "undefined" ){
-            console.log("Pasa por el primer if")
             for(var i = 0; i < data.errors.length; i++){
                 console.log(data.errors[i])
                 throw new Error (data.errors[i].msg)
             }    
         }else if(!data.success && typeof data.errors === "undefined"){
-            console.log("Pasa por el segundo if")
             throw new Error (data.msg)
         }
         else{
-            console.log("Pasa por el else")
-            alert(data.msg)  
+            alert(data.msg)
+            localStorage.setItem("name", inputName.value)
+            localStorage.setItem("last name", inputSurname.value)
+            localStorage.setItem("dni", inputNationalDoc.value)
+            localStorage.setItem("dob", dateInput.value)
+            localStorage.setItem("phone", inputPhone.value)
+            localStorage.setItem("address", addressInput.value)
+            localStorage.setItem("city", cityOfResidence.value)
+            localStorage.setItem("zip", postalInput.value)
+            localStorage.setItem("email", emailInput.value)
+            localStorage.setItem("password", pass.value)
         };
     })
     .catch (function(err){
