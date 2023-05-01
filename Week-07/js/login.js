@@ -112,18 +112,21 @@ var loginButton = document.querySelector("#login-button")
                     return res.json()
                 })
                 .then (function(data){
-                    if(!data.success){throw new Error(data)};
-                    alert(data.msg)
-                    
+                    console.log(data)
+                    if(!data.success && typeof data.errors !== "undefined" ){
+                        for(var i = 0; i < data.errors.length; i++){
+                            console.log(data.errors[i])
+                            throw new Error (data.errors[i].msg)
+                        }    
+                    }else if(!data.success && typeof data.errors === "undefined"){
+                        throw new Error (data.msg)
+                    }
+                    else{
+                        alert(data.msg)  
+                    };
                 })
                 .catch (function(err){
-                    console.log(err)
-
-                    // if(typeof err.msg == true){
-                    //     for(var i = 0; i < err.errors.length; i++){
-                    //         alert(err.errors[i].msg)
-                    //     };
-                    // }
+                        alert(err)
                 })
         }
 

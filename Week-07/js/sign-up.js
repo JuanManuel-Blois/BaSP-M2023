@@ -248,7 +248,6 @@ function inputLetterValidation(input){
 
 var cityValidation = function(){
     var cityValue = cityOfResidence.value;
-    console.log(cityValue)
 
     if(specialCharacterCheckTwo(cityValue)){
         cityOfResidence.style.borderColor = "red";
@@ -494,28 +493,42 @@ registerButton.addEventListener("click", function(e){
         alert(returnValidation)
     }
 
-    var url = `https://api-rest-server.vercel.app/signup?
-    name=${inputName.value}&
-    lastName=${inputSurname.value}&
-    dni=${inputNationalDoc.value}&
-    dob=${dateInput.value}&
-    phone=${inputPhone.value}&
-    address=${addressInput.value}&
-    city=${cityOfResidence.value}&
-    zip=${postalInput.value}&
-    email=${emailInput.value}&
-    password=${pass.value}`;
+    function formatDate(date) {
+        var d = new Date(date);
+        var year = d.getFullYear();
+        var month = ("0" + (d.getMonth() + 1)).slice(-2);
+        var day = ("0" + d.getDate()).slice(-2);
+        return `${month}/${day}/${year}`;
+      }
+      var date = dateInput.value;
+      var formattedDated = formatDate(date);
+      console.log(formattedDated);
+
+    var url = `https://api-rest-server.vercel.app/signup?name=${inputName.value}&lastName=${inputSurname.value}&dni=${inputNationalDoc.value}&dob=${formattedDated}&phone=${inputPhone.value}&address=${addressInput.value}&city=${cityOfResidence.value}&zip=${postalInput.value}&email=${emailInput.value}&password=${pass.value}`;
 
     fetch(url)
-        .then(function(res){
-            if(res.status.ok) throw new Error("Error")
-            return res.json()
-        })
-        .then (function(data){
-            console.log(data)
-            alert(data.msg + " " + JSON.stringify(data))
-        })
-        .catch (function(err){
+    .then(function(res){
+        return res.json()
+    })
+    .then (function(data){
+        console.log(inputName.value)
+        console.log(data)
+        if(!data.success && typeof data.errors !== "undefined" ){
+            console.log("Pasa por el primer if")
+            for(var i = 0; i < data.errors.length; i++){
+                console.log(data.errors[i])
+                throw new Error (data.errors[i].msg)
+            }    
+        }else if(!data.success && typeof data.errors === "undefined"){
+            console.log("Pasa por el segundo if")
+            throw new Error (data.msg)
+        }
+        else{
+            console.log("Pasa por el else")
+            alert(data.msg)  
+        };
+    })
+    .catch (function(err){
             alert(err)
-        })
+    })
 })
