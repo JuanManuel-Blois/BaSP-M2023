@@ -94,16 +94,16 @@ var loginButton = document.querySelector("#login-button")
    
     loginButton.addEventListener("click", function(e){
         e.preventDefault();
-        var returnValidation = validateAll();
-        if(returnValidation == ""){
-            alert(
-            "\nEmail: " +
-            emailInput.value +
-            "\nPassword: " +
-            pass.value)
-        } else {
-            alert(returnValidation)
-        }
+        // var returnValidation = validateAll();
+        // if(returnValidation == ""){
+        //     alert(
+        //     "\nEmail: " +
+        //     emailInput.value +
+        //     "\nPassword: " +
+        //     pass.value)
+        // } else {
+        //     alert(returnValidation)
+        // }
 
         var url = `https://api-rest-server.vercel.app/login?email=${emailInput.value}&password=${pass.value}`;
 
@@ -112,18 +112,15 @@ var loginButton = document.querySelector("#login-button")
                     return res.json()
                 })
                 .then (function(data){
-                    console.log(data)
-                    if(!data.success && typeof data.errors !== "undefined" ){
-                        for(var i = 0; i < data.errors.length; i++){
-                            console.log(data.errors[i])
-                            throw new Error (data.errors[i].msg)
-                        }    
-                    }else if(!data.success && typeof data.errors === "undefined"){
-                        throw new Error (data.msg)
+                    if(data.success){
+                        return alert(data.msg)
                     }
-                    else{
-                        alert(data.msg)  
-                    };
+                    if(data.errors){
+                        for(var i = 0; i < data.errors.length; i++){
+                            throw new Error(data.errors[i].msg)
+                        }    
+                    }
+                    throw new Error(data.msg)
                 })
                 .catch (function(err){
                         alert(err)

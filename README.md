@@ -40,5 +40,9 @@ On Week 05 we worked on javascript exercises and practice
 On Week 06 we worked on javascript in a practical manner developing the site we've been working on
 
 
+## Week 07
+[My site for delivery](https://juanmanuel-blois.github.io/BaSP-M2023/Week-07/views/Index.html)
+
+On week 07 we worked on asynchronism, callbacks, promises and API fetching and applies it on the site we've been working on
 ## Authors
 - Juan Manuel Blois

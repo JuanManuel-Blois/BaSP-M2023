@@ -19,11 +19,14 @@
 .data-input{
     display: flex;
     justify-content: center;
+    width: 12.5rem;
+    height: 6.75rem;
 }
 
 .input-text{
     display: flex;
     flex-direction: column;
+    width: 12.5rem;
 }
 
 .data-input img{
@@ -35,7 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin: 1rem 0 ;
+    margin: 1rem 0 0.5rem 0 ;
 }
 
 .login-data p{

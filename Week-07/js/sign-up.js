@@ -427,80 +427,80 @@ postalInput.value = localStorage.getItem("zip")
 emailInput.value = localStorage.getItem("email")
 pass.value = localStorage.getItem("password")
 
-var validateAll = function(){
-    var array = [];
-    if(!nameValidate()){
-        array.push("Name is not correct")
-    }
+// var validateAll = function(){
+//     var array = [];
+//     if(!nameValidate()){
+//         array.push("Name is not correct")
+//     }
 
-    if (!surnameValidate()){
-        array.push("\nSurname is not valid")
-    }
+//     if (!surnameValidate()){
+//         array.push("\nSurname is not valid")
+//     }
 
-    if(!nationalValidate()){
-        array.push("\nDNI is not valid")
-    }
+//     if(!nationalValidate()){
+//         array.push("\nDNI is not valid")
+//     }
 
-    if(!dateValidation()){
-        array.push("\nDate is not valid")
-    }
+//     if(!dateValidation()){
+//         array.push("\nDate is not valid")
+//     }
 
-    if(!phoneValidation()){
-        array.push("\nPhone is not valid")
-    }
+//     if(!phoneValidation()){
+//         array.push("\nPhone is not valid")
+//     }
 
-    if(!addressValidation()){
-        array.push("\nAddres is not valid")
-    }
+//     if(!addressValidation()){
+//         array.push("\nAddres is not valid")
+//     }
 
-    if(!cityValidation()){
-        array.push("\nCity is not valid")
-    }
+//     if(!cityValidation()){
+//         array.push("\nCity is not valid")
+//     }
 
-    if(!postalValidation()){
-        array.push("\nPostal code is not valid")
-    }
+//     if(!postalValidation()){
+//         array.push("\nPostal code is not valid")
+//     }
 
-    if(!emailValidation()){
-        array.push("\nEmail is not valid")
-    }
+//     if(!emailValidation()){
+//         array.push("\nEmail is not valid")
+//     }
 
-    if(!validatePass()){
-        array.push("\nPassword is not valid")
-    }
+//     if(!validatePass()){
+//         array.push("\nPassword is not valid")
+//     }
 
-    return array
-}
+//     return array
+// }
 
 var registerButton = document.querySelector(`#register`)
 
 registerButton.addEventListener("click", function(e){
     e.preventDefault();
-    var returnValidation = validateAll();
-    if(returnValidation == ""){
-        alert( "Name: " +
-        inputName.value +
-        "\nSurname: " +
-        inputSurname.value +
-        "\nDNI: " +
-        inputNationalDoc.value +
-        "\nBirthday: " +
-        dateInput.value +
-        "\nPhone: " +
-        inputPhone.value +
-        "\nAdress: " +
-        addressInput.value +
-        "\nCity: " +
-        cityOfResidence.value +
-        "\nPostal Code: " +
-        postalInput.value +
-        "\nEmail: " +
-        emailInput.value +
-        "\nPassword: " +
-        pass.value)
-    } else {
-        alert(returnValidation)
-    }
+    // var returnValidation = validateAll();
+    // if(returnValidation == ""){
+    //     alert( "Name: " +
+    //     inputName.value +
+    //     "\nSurname: " +
+    //     inputSurname.value +
+    //     "\nDNI: " +
+    //     inputNationalDoc.value +
+    //     "\nBirthday: " +
+    //     dateInput.value +
+    //     "\nPhone: " +
+    //     inputPhone.value +
+    //     "\nAdress: " +
+    //     addressInput.value +
+    //     "\nCity: " +
+    //     cityOfResidence.value +
+    //     "\nPostal Code: " +
+    //     postalInput.value +
+    //     "\nEmail: " +
+    //     emailInput.value +
+    //     "\nPassword: " +
+    //     pass.value)
+    // } else {
+    //     alert(returnValidation)
+    // }
 
     function formatDate(date) {
         var d = new Date(date);
@@ -520,16 +520,8 @@ registerButton.addEventListener("click", function(e){
         return res.json()
     })
     .then (function(data){
-        if(!data.success && typeof data.errors !== "undefined" ){
-            for(var i = 0; i < data.errors.length; i++){
-                console.log(data.errors[i])
-                throw new Error (data.errors[i].msg)
-            }    
-        }else if(!data.success && typeof data.errors === "undefined"){
-            throw new Error (data.msg)
-        }
-        else{
-            alert(data.msg)
+        if(data.success){
+            console.log("primer if")
             localStorage.setItem("name", inputName.value)
             localStorage.setItem("last name", inputSurname.value)
             localStorage.setItem("dni", inputNationalDoc.value)
@@ -539,8 +531,15 @@ registerButton.addEventListener("click", function(e){
             localStorage.setItem("city", cityOfResidence.value)
             localStorage.setItem("zip", postalInput.value)
             localStorage.setItem("email", emailInput.value)
-            localStorage.setItem("password", pass.value)
-        };
+            localStorage.setItem("password", pass.value);
+            return alert(data.msg)
+        }
+        if(data.errors){
+            console.log("segundo if")
+            for(var i = 0; i < data.errors.length; i++){
+                throw new Error (data.errors[i].msg)
+            }    
+        }
     })
     .catch (function(err){
             alert(err)
